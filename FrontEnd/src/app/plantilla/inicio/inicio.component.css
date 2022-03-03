@@ -1,0 +1,144 @@
+.content {
+  justify-content: space-around;
+  text-align: justify;
+  width: 50vw;
+  margin-top: 20vh;
+  margin-left: 20vh;
+}
+.title {
+  line-height: 80px;
+  font-family: var(--title-font-family);
+  font-size: var(--title-font-size);
+  font-weight: 700;
+}
+
+.paragraph {
+  line-height: 30px;
+  font-family: var(--text-font-family);
+  font-size: var(--paragraph-font-size);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  z-index: 1;
+  font-weight: bold;
+  font-family: var(--text-font-family);
+  color: var(--text-color-white);
+}
+.button {
+  padding: 15px;
+  font-size: var(--paragraph-font-size);
+  text-decoration: none;
+  text-align: center;
+  line-height: 100px;
+  color: var(--text-color-white);
+  border-radius: 50px;
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background-size: 600%;
+  animation: anime 16s linear infinite;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.services_links {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wave {
+  position: relative;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+  position: relative;
+  width: calc(155% + 1.3px);
+}
+
+.wave .shape-fill {
+  /*fill: #F8F9D7;*/
+  fill: var(--main-color);
+}
+
+.link {
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 2px;
+  text-align: center;
+  z-index: 1;
+}
+.link:hover {
+  transform: scale(1.2);
+}
+
+.location {
+  display: flex;
+  justify-content: space-around;
+  height: 80vh;
+  width: 100%;
+  background-color: var(--main-color);
+  color: var(--text-color-white);
+  overflow: hidden;
+}
+
+.mapouter {
+  overflow: hidden;
+  background: none !important;
+  height: 293px;
+  width: 437;
+  border-radius: 50px;
+  margin-top: 25vh;
+}
+.imgContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 600px;
+  max-height: 700px;
+  overflow: hidden;
+  border-radius: 250px 0 0 250px;
+}
+.slider {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+  position: relative;
+  left: -400px;
+  background: url(/assets/img/painting_portfolio1.jpeg);
+  animation: slide 60s infinite ease;
+}
+
+@keyframes slide {
+  30% {
+    background: url(/assets/img/painting_portfolio2.jpeg);
+  }
+  40% {
+    background: url(/assets/img/painting_portfolio3.jpeg);
+    left: -300;
+  }
+  60% {
+    background: url(/assets/img/painting_portfolio4.jpeg);
+    object-fit: cover;
+  }
+  80% {
+    background: url(/assets/img/painting_portfolio5.jpeg);
+  }
+  100% {
+    background: url(/assets/img/painting_portfolio6.jpeg);
+  }
+}

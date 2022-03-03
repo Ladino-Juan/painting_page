@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  height: 200px;
+  background-color: white;
+  color: rgb(202, 202, 202);
+  list-style-type: none;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-family: var(--title-font-family);
+}
+h2 {
+  color: rgb(202, 202, 202);
+  text-align: center;
+  font-family: var(--text-font-family);
+}
+a {
+  color: rgb(202, 202, 202);
+  font-family: var(--text-font-family);
+}

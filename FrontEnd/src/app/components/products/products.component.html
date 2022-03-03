@@ -1,0 +1,85 @@
+<div class="title_container">
+  <div class="bg_img"></div>
+  <div class="mat-display-3 title">
+    COMPLETE PAINTING SOLUTIONS <br />
+    <span class="mat-display-1">A colorful house is a happy house</span>
+  </div>
+</div>
+<mat-divider></mat-divider>
+<div class="container">
+  <mat-tab-group mat-align-tabs="center" dynamicHeight>
+    <mat-tab label="Services">
+      <div class="services_container">
+        <div class="content">
+          <div
+            class="mat-display-2 title"
+            style="
+              color: var(--text-color-black);
+              position: relative;
+              text-align: initial;
+            "
+          >
+            OUR SERVICES
+          </div>
+          <div class="mat-display-1 paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+            exercitationem. Quia, iste consequuntur autem aliquam eius laborum
+            eaque eligendi atque amet veritatis sunt doloribus quibusdam
+            repellat ducimus ab. Eius, vitae! Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Optio, vitae! Commodi voluptatum odit
+            iure aperiam, laborum sequi facilis quaerat aspernatur libero iste
+            culpa eum consequatur quo optio ad exercitationem ducimus!
+          </div>
+        </div>
+        <mat-grid-list cols="2" rowHeight="1.5:1" gutterSize="10px">
+          <mat-grid-tile
+            ><img
+              src="./assets/img/painting_portfolio1.jpeg"
+              alt="house painting"
+              width="150%"
+              overflow="hidden"
+              object-fit="cover"
+          /></mat-grid-tile>
+          <mat-grid-tile
+            ><img
+              src="./assets/img/painting_portfolio2.jpeg"
+              alt="painting services"
+              width="100%"
+              object-fit="cover"
+          /></mat-grid-tile>
+          <mat-grid-tile
+            ><img
+              src="./assets/img/painting_portfolio3.jpeg"
+              alt="luis painting tampa"
+              width="100%"
+              object-fit="cover"
+          /></mat-grid-tile>
+          <mat-grid-tile
+            ><img
+              src="./assets/img/painting_portfolio4.jpeg"
+              alt="luis painting orlando"
+              width="100%"
+              object-fit="cover"
+          /></mat-grid-tile>
+          <mat-grid-tile
+            ><img
+              src="./assets/img/painting_portfolio5.jpeg"
+              alt="luis painting miami"
+              width="150%"
+              overflow="hidden"
+              object-fit="cover"
+          /></mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </mat-tab>
+    <mat-tab label="Interior Painting">
+      <app-interior-painting></app-interior-painting>
+    </mat-tab>
+    <mat-tab label="Exterior Painting">
+      <app-exterior-painting></app-exterior-painting>
+    </mat-tab>
+    <mat-tab label="Cabinet Painting">
+      <app-cabinet-painting></app-cabinet-painting>
+    </mat-tab>
+  </mat-tab-group>
+</div>
